@@ -1,0 +1,21 @@
+docker version
+docker run -d -p 80:80 docker/getting-started
+docker info
+docker images
+docker ps -a
+docker kill
+docker rm
+docker image rm
+docker run -it –name Python python
+docker build -t gatikgubkabob/myiso ./php
+docker pull
+docker build .
+docker run -p 8001:8000  a1c76e57fd90
+docker build -t gccapp .
+docker run -p 8001:80 -d phpapp
+docker run -p 8001:80 -d gubka
+docker-compose build
+docker-compose up
+docker push gatikgubkabob/myiso:latest
+docker image rm gatikgubkabob/myiso
+docker pull gatikgubkabob/myiso 

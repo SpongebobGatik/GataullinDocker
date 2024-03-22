@@ -1,0 +1,20 @@
+version: '3.1'
+
+services:
+  php:
+    build: ./php
+    ports:
+      - 8001:80
+  db:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8000:80
+    environment:
+      - PMA_ARBITRARY=1
